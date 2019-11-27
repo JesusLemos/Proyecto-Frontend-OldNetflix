@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+.caja{
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    background: cyan;
+
+    li, a{
+        
+        text-decoration: none;
+        list-style-type: none;
+        color:black;
+    }
+   li>ul{
+    display: none;
+   }
+   li:hover>ul{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+}
