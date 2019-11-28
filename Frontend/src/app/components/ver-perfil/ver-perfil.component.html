@@ -1,1 +1,5 @@
-<p>ver-perfil works!</p>
+
+<form (submit)='obtPerfil()' #form="ngForm">
+<input type="text" matInput [(ngModel)]="perfil.token" [ngModelOptions]="{standalone: true}">
+<button>Enviar</button>
+</form>

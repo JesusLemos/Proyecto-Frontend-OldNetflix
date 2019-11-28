@@ -1,1 +1,17 @@
-<p>registro works!</p>
+<form (submit)='crearRegistro()' #form="ngForm">
+    <p>Nombre de usuario</p>
+    <input type="text" matInput [(ngModel)]="usuario.usuario" [ngModelOptions]="{standalone: true}">
+    
+    <p>Nombre</p>
+    <input type="text" matInput [(ngModel)]="usuario.nombre" [ngModelOptions]="{standalone: true}">
+    
+    <p>Apellido</p>
+    <input type="text" matInput [(ngModel)]="usuario.apellido" [ngModelOptions]="{standalone: true}">
+    
+    <p>Correo</p>
+    <input type="text" matInput [(ngModel)]="usuario.correo" [ngModelOptions]="{standalone: true}">
+    
+    <p>Contraseña</p>
+    <input type="password" matInput [(ngModel)]="usuario.contrasenya" [ngModelOptions]="{standalone: true}">
+        <button>Enviar</button>
+</form>
