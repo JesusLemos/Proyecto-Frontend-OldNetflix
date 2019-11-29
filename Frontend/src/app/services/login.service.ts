@@ -10,7 +10,6 @@ export class LoginService {
  private login:Login;
   constructor(private http: HttpClient) { }
   conectar(login:Login): Observable<object>{
-   
     return this.http.post('http://localhost:3000/usuario/login', login)
   }
   getLogin(): Login {
