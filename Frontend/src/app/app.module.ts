@@ -9,6 +9,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { VerPerfilComponent } from './components/ver-perfil/ver-perfil.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegistroComponent } from './components/registro/registro.component';
+import { FiltroidComponent } from './components/filtroid/filtroid.component';
+import { FiltrotituloComponent } from './components/filtrotitulo/filtrotitulo.component';
+import { FiltrogeneroComponent } from './components/filtrogenero/filtrogenero.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -18,12 +23,17 @@ import { RegistroComponent } from './components/registro/registro.component';
     VerPerfilComponent,
     LoginComponent,
     RegistroComponent,
+    FiltroidComponent,
+    FiltrotituloComponent,
+    FiltrogeneroComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,3 @@
 export interface PerfilUsuario{
-    "token": string
+    "usuario": string
 }

@@ -1,17 +1,24 @@
+
+<div class="cajaFormulario">
 <form (submit)='crearRegistro()' #form="ngForm">
+
+    <input class="form-control" type="text" matInput [(ngModel)]="usuario.usuario" [ngModelOptions]="{standalone: true}">
     <p>Nombre de usuario</p>
-    <input type="text" matInput [(ngModel)]="usuario.usuario" [ngModelOptions]="{standalone: true}">
     
+    <input class="form-control" type="text" matInput [(ngModel)]="usuario.nombre" [ngModelOptions]="{standalone: true}">
     <p>Nombre</p>
-    <input type="text" matInput [(ngModel)]="usuario.nombre" [ngModelOptions]="{standalone: true}">
     
+    <input class="form-control" type="text" matInput [(ngModel)]="usuario.apellido" [ngModelOptions]="{standalone: true}">
     <p>Apellido</p>
-    <input type="text" matInput [(ngModel)]="usuario.apellido" [ngModelOptions]="{standalone: true}">
     
+    <input class="form-control" type="text" matInput [(ngModel)]="usuario.correo" [ngModelOptions]="{standalone: true}">
     <p>Correo</p>
-    <input type="text" matInput [(ngModel)]="usuario.correo" [ngModelOptions]="{standalone: true}">
     
+    <input class="form-control" type="password" matInput [(ngModel)]="usuario.contrasenya" [ngModelOptions]="{standalone: true}">
     <p>Contraseña</p>
-    <input type="password" matInput [(ngModel)]="usuario.contrasenya" [ngModelOptions]="{standalone: true}">
-        <button>Enviar</button>
+     
+           <button class="btn btn-primary">Enviar</button>
+
+   
 </form>
+</div>

@@ -15,6 +15,7 @@ usuario:RegistroUsuario={
   correo:'',
   contrasenya:''
 }
+// usuario2=JSON.parse(localStorage.getItem('usuario'))
   constructor(private registro:RegistroService) { }
   crearRegistro(){
     this.registro.crearUsuario(this.usuario)

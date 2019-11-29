@@ -23,4 +23,22 @@
     align-items: center;
     flex-direction: column;
    }
+  
+}
+img{
+    width: 5vw;
+    // height: 15vw;
+}
+.cajaLogin{
+    width: 15vw;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.cajaUsuario{
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+    
 }

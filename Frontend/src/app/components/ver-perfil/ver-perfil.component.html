@@ -1,5 +1,13 @@
-
 <form (submit)='obtPerfil()' #form="ngForm">
-<input type="text" matInput [(ngModel)]="perfil.token" [ngModelOptions]="{standalone: true}">
-<button>Enviar</button>
+    <input type="text" matInput [(ngModel)]="perfil.usuario" [ngModelOptions]="{standalone: true}">
+    <button>Enviar</button>
 </form>
+
+<div>
+    <p>Id: {{usuario.id}}</p>
+    <p>Nombre de usuario: {{usuario.usuario}}</p>
+    <p>Nombre: {{usuario.nombre}}</p>
+    <p>Apellido: {{usuario.apellido}}</p>
+    <p>Correo: {{usuario.correo}}</p>
+</div>
+
