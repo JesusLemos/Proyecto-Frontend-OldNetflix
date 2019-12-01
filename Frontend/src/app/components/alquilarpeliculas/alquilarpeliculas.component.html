@@ -1,0 +1,11 @@
+<div class="cajaFormulario"> 
+<form (submit)='alquilarpelicula()' #form="ngForm">
+    <p>Número de la película</p>
+    <input class="form-control" type="number" matInput [(ngModel)]="peliculayusuario.idpelicula" [ngModelOptions]="{standalone: true}">
+    
+
+    <p>¿Cuántos días lo vas a querer alquilar?</p>
+    <input class="form-control" type="number" matInput [(ngModel)]="peliculayusuario.dias" [ngModelOptions]="{standalone: true}">
+   <button class="btn btn-primary">Enviar</button>
+</form>
+</div>

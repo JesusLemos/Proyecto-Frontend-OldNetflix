@@ -9,6 +9,7 @@ import { FiltrogeneroComponent } from './components/filtrogenero/filtrogenero.co
 import { FiltrotituloComponent } from './components/filtrotitulo/filtrotitulo.component';
 import { MostrartodaslaspopularesComponent } from './components/mostrartodaslaspopulares/mostrartodaslaspopulares.component';
 import { InfomacionpeliculaComponent } from './components/infomacionpelicula/infomacionpelicula.component'
+import { AlquilarpeliculasComponent } from './components/alquilarpeliculas/alquilarpeliculas.component';
 
 
 const routes: Routes = [
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path:"peliculas/genero", component:FiltrogeneroComponent},
   {path:"peliculas/titulo", component:FiltrotituloComponent},
   {path:"peliculas/peliculaspopulares", component: MostrartodaslaspopularesComponent},
-  {path:"peliculas/peliculasinfo", component:InfomacionpeliculaComponent}
+    {path:"alquilarpeliculas", component:AlquilarpeliculasComponent},
+    {path:"peliculas/peliculasinfo", component:InfomacionpeliculaComponent}
 ];
 
 @NgModule({

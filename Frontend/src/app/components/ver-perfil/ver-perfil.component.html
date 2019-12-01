@@ -1,13 +1,27 @@
-<form (submit)='obtPerfil()' #form="ngForm">
+<!-- <form (submit)='obtPerfil()' #form="ngForm">
     <input type="text" matInput [(ngModel)]="perfil.usuario" [ngModelOptions]="{standalone: true}">
     <button>Enviar</button>
-</form>
-
-<div *ngIf="usuario" >
-    <p>Id: {{usuario.id}}</p>
-    <p>Nombre de usuario: {{usuario.usuario}}</p>
-    <p>Nombre: {{usuario.nombre}}</p>
-    <p>Apellido: {{usuario.apellido}}</p>
-    <p>Correo: {{usuario.correo}}</p>
+</form> -->
+<div class="contenedor">
+    <div class="cajaUsuario">
+        <h2>Perfil Usuario</h2>
+        <p>Nombre de usuario: {{usuario2.usuario}}</p>
+        <p>Nombre: {{usuario2.nombre}}</p>
+        <p>Apellido: {{usuario2.apellido}}</p>
+        <p>Correo: {{usuario2.correo}}</p>
+    </div>
+    <div class="cajaPeliculasAlquiladas">
+        <h2>Peliculas Alquiladas</h2>
+        <div *ngFor="let peliculas of peliculasAlquiladas">
+            <p>Nombre de usuario: {{peliculas.usuario}}</p>    
+            <p>Correo: {{usuario2.correo}}</p>
+            <p>Fecha del alquiler: {{peliculas.fechaalquiler}}</p>
+            <p>Fecha de entrega: {{peliculas.fechaentrega}}</p>
+            <p>Numero de pelicula: {{peliculas.idpelicula}}</p>
+            <br>
+        </div>
+    </div>
 </div>
+
+
 

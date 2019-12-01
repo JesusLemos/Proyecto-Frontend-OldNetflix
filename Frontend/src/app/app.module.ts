@@ -15,6 +15,7 @@ import { FiltrogeneroComponent } from './components/filtrogenero/filtrogenero.co
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MostrartodaslaspopularesComponent } from './components/mostrartodaslaspopulares/mostrartodaslaspopulares.component';
 import { InfomacionpeliculaComponent } from './components/infomacionpelicula/infomacionpelicula.component';
+import { AlquilarpeliculasComponent } from './components/alquilarpeliculas/alquilarpeliculas.component';
 // import { MostrarpopularesComponent } from './components/mostrarpopulares/mostrarpopulares.component';
 
 
@@ -30,7 +31,8 @@ import { InfomacionpeliculaComponent } from './components/infomacionpelicula/inf
     FiltrotituloComponent,
     FiltrogeneroComponent,
     MostrartodaslaspopularesComponent,
-    InfomacionpeliculaComponent
+    InfomacionpeliculaComponent,
+    AlquilarpeliculasComponent
     // MostrarpopularesComponent
     
   ],
