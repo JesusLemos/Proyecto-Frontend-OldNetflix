@@ -5,6 +5,10 @@ import { VerPerfilComponent } from './components/ver-perfil/ver-perfil.component
 import { LoginComponent } from './components/login/login.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { FiltroidComponent } from './components/filtroid/filtroid.component';
+import { FiltrogeneroComponent } from './components/filtrogenero/filtrogenero.component';
+import { FiltrotituloComponent } from './components/filtrotitulo/filtrotitulo.component';
+import { MostrartodaslaspopularesComponent } from './components/mostrartodaslaspopulares/mostrartodaslaspopulares.component';
+import { InfomacionpeliculaComponent } from './components/infomacionpelicula/infomacionpelicula.component'
 
 
 const routes: Routes = [
@@ -13,7 +17,11 @@ const routes: Routes = [
   {path:"usuarios/verperfil", component:VerPerfilComponent},
   {path:"usuarios/login", component:LoginComponent},
   {path:"usuarios/registro", component:RegistroComponent},
-  {path:"peliculas/peliculaid", component:FiltroidComponent}
+  {path:"peliculas/peliculaid", component:FiltroidComponent},
+  {path:"peliculas/genero", component:FiltrogeneroComponent},
+  {path:"peliculas/titulo", component:FiltrotituloComponent},
+  {path:"peliculas/peliculaspopulares", component: MostrartodaslaspopularesComponent},
+  {path:"peliculas/peliculasinfo", component:InfomacionpeliculaComponent}
 ];
 
 @NgModule({

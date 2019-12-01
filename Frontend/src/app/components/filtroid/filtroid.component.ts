@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FiltroidService } from 'src/app/services/filtroid.service';
+;
 import { FiltroId } from 'src/app/models/filtroid.model';
+import { FiltrosService } from 'src/app/services/filtros.service';
 
 @Component({
   selector: 'app-filtroid',
@@ -11,7 +12,7 @@ export class FiltroidComponent {
 id:FiltroId={
   idpeliculas:0
 }
-  constructor(private filtroid:FiltroidService) { }
+  constructor(private filtroid:FiltrosService) { }
 
   mostrarid(){
     this.filtroid.obtenerPeliculaId(this.id)

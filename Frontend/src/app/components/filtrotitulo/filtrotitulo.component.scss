@@ -1,0 +1,15 @@
+.cajaPrincipal{
+    width:98vw;
+    // background:red;
+    display:flex;
+    .cajaInput{
+        width:30vw;
+    }
+    .cajaPelicula{
+        width:68vw;
+        display:flex;
+        justify-content:center;
+        flex-direction:column;
+        align-items:center;
+    }
+}

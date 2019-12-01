@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { FiltroidService } from './filtroid.service';
+import { FiltrosService } from './filtros.service';
 
-describe('FiltroidService', () => {
+describe('FiltrosService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: FiltroidService = TestBed.get(FiltroidService);
+    const service: FiltrosService = TestBed.get(FiltrosService);
     expect(service).toBeTruthy();
   });
 });

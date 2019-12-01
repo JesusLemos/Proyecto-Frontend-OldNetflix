@@ -1,0 +1,12 @@
+.contenedor{
+    width:98vw;
+    display:flex;
+    justify-content:center;
+    .DetallePeliculas{
+        width:50vw;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+    }
+}

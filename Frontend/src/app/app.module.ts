@@ -13,6 +13,9 @@ import { FiltroidComponent } from './components/filtroid/filtroid.component';
 import { FiltrotituloComponent } from './components/filtrotitulo/filtrotitulo.component';
 import { FiltrogeneroComponent } from './components/filtrogenero/filtrogenero.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MostrartodaslaspopularesComponent } from './components/mostrartodaslaspopulares/mostrartodaslaspopulares.component';
+import { InfomacionpeliculaComponent } from './components/infomacionpelicula/infomacionpelicula.component';
+// import { MostrarpopularesComponent } from './components/mostrarpopulares/mostrarpopulares.component';
 
 
 @NgModule({
@@ -25,7 +28,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RegistroComponent,
     FiltroidComponent,
     FiltrotituloComponent,
-    FiltrogeneroComponent
+    FiltrogeneroComponent,
+    MostrartodaslaspopularesComponent,
+    InfomacionpeliculaComponent
+    // MostrarpopularesComponent
     
   ],
   imports: [
