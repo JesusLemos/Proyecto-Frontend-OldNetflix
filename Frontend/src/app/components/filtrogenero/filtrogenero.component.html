@@ -1,9 +1,24 @@
+<div class="cajaInput">
+    <div >
+        <form class="formulario" (submit)='mostrarGenero()' #form>
+            <p>Género de la pelicula</p>
+            <input class="form-control" type="text" matInput [(ngModel)]="genero.genre"
+                [ngModelOptions]="{standalone: true}">
+            <button class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
 
-<div class="cajaPrincipal">
-    <div class="cajaInput"><form (submit)='mostrarGenero()' #form>
-    <p>Genero de la pelicula</p>
-    <input class="form-control" type="text" matInput [(ngModel)]="genero.genre" [ngModelOptions]="{standalone: true}">
-    <button class="btn btn-primary">Enviar</button>
-</form>
+
+
 </div>
+<div class="cajaPeliculas">
+    <div class="peliculas" *ngFor="let pelicula of peliculas[0]">
+            <h1>{{pelicula.idpelicula}}</h1>
+            <h2>{{pelicula.title}} </h2>
+            <img src="{{url + pelicula.poster_path}}" alt="">
+            <p>{{pelicula.genre}}</p>
+        </div>
+
 </div>
+
+   

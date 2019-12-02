@@ -1,5 +1,6 @@
-<div>
-        <div *ngFor="let pelicula of peliculas[0]">
+<div class="caja">
+        <div class="peliculas" *ngFor="let pelicula of peliculas[0]">
+            <h1>{{pelicula.idpelicula}}</h1>
             <h2>{{pelicula.title}} </h2>
             <img src="{{url + pelicula.poster_path}}" alt="">
             

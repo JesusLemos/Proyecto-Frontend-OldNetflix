@@ -1,5 +1,18 @@
-<form (submit)='mostrarid()' #form>
-    <p>Id de la pelicula</p>
-    <input class="form-control" type="text" matInput [(ngModel)]="id.idpeliculas" [ngModelOptions]="{standalone: true}">
-    <button class="btn btn-primary">Enviar</button>
-</form>
+<div class="cajaPrincipal">
+    <div class="cajaInput">
+        <form (submit)='mostrarid()' #form>
+            <p>Id de la pelicula</p>
+            <input class="form-control" type="text" matInput [(ngModel)]="id.idpeliculas"
+                [ngModelOptions]="{standalone: true}">
+            <button class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <div *ngIf="pelicula" class="cajaPelicula">
+        <p>Número: {{pelicula.idpelicula}}</p>
+        <p>Título: {{pelicula.title}}</p>
+        <p>Género:{{pelicula.genre}} </p>
+        <img src="{{url + pelicula?.poster_path}}" alt="">
+    </div>
+
+</div>

@@ -21,7 +21,7 @@ export class FiltrosService {
 
   constructor(private http:HttpClient) { }
 
-  obtenerPeliculaGenero(genero:FiltroGenero):Observable<object>{
+  obtenerPeliculaGenero(genero:FiltroGenero):Observable<any>{
     console.log(genero.genre)
     return this.http.get('http://localhost:3000/peliculas/mostrargenero/'+genero.genre)
   }

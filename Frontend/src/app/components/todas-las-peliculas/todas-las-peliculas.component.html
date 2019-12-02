@@ -1,7 +1,9 @@
 <div class="caja">
     <div class="peliculas" *ngFor="let pelicula of peliculas">
+        <h1>{{pelicula.idpelicula}}</h1>
         <h2 title="{{pelicula.title}}">{{pelicula.title}} </h2>
         <img src="{{url + pelicula.poster_path}}" alt="">
         <button (click)="obtenerPelicula(pelicula.idpelicula)" class="btn btn-outline-dark button">Más información</button>
     </div>
 </div>
+

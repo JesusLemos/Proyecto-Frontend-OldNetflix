@@ -12,11 +12,13 @@ export class FiltroidComponent {
 id:FiltroId={
   idpeliculas:0
 }
+url= 'https://image.tmdb.org/t/p/w185_and_h278_bestv2/';
+pelicula:{};
   constructor(private filtroid:FiltrosService) { }
 
   mostrarid(){
     this.filtroid.obtenerPeliculaId(this.id)
-    .subscribe(res =>console.log(res) )
+    .subscribe(res =>this.pelicula=res )
   }
 
 }

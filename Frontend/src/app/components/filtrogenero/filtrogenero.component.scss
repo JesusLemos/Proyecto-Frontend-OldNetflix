@@ -1,0 +1,34 @@
+.cajaInput{
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .formulario button{
+        margin: 1vw 0;
+    }
+}
+
+.cajaPeliculas{
+    width: 98vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    .peliculas{
+        width: 15vw;
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        align-items:center;
+    }
+    .peliculas h2{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 200px;
+    }
+}
